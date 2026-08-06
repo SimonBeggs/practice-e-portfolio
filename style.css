@@ -27,6 +27,8 @@ li {
 
 .flex {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-1 {
@@ -105,8 +107,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 500px;
+  max-width: 600px;
   margin-bottom: 0 auto;
+  text-align: center;
 }
 .about-me__picture--mask {
   width: 100px;
@@ -133,4 +136,12 @@ margin-bottom: 28;
   font-size: 20px;
   margin-bottom: 28px;
   text-align: center;
+}
+
+.about-me__link {
+  font-size: 20px;
+  color: #242424;
+  text-decoration: none;
+  padding: 0 16px
+  
 }
