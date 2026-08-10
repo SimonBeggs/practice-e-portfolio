@@ -32,12 +32,14 @@ li {
 
 .flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .flex-1 {
   flex: 1;
+}
+
+.container {
+  padding: 50px 0;
 }
 
 .row {
@@ -58,6 +60,22 @@ li {
 .text-purple {
   color: #2539e6;
 }
+
+.language__img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+section:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.section__title {
+  margin-bottom: 20px;
+}
+
+
 
 /* NAVIGATION BAR */
 
@@ -103,7 +121,7 @@ nav {
 
 /* ABOUT ME */
 
-.about-me {
+#aboutme {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -167,4 +185,28 @@ nav {
 
 .about-me__img {
   width: 100%;
+}
+
+/* TECH -STACK*/
+
+.language__img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+.language {
+  width: 25%;
+}
+.language__img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  
+}
+
+.language__list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
