@@ -38,11 +38,24 @@ a {
 .link__hover-effect:after {
   content: "";
   position: absolute;
-  height: 3;
-  background-color: black;
-  width: 100%;
+  height: 3px;
+  width: 0%;
   bottom: -3px;
+  right: 0;
+  transition: all 300ms ease;
+}
 
+.link__hover-effect--white:after {
+  background-color: #fff;
+}
+
+.link__hover-effect--black:after {
+  background-color: black;
+}
+
+.link__hover-effect:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 li {
@@ -137,7 +150,7 @@ nav {
 
 /* ABOUT ME */
 
-#aboutme {
+#about-me {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
