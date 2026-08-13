@@ -403,7 +403,7 @@ footer {
   opacity: 1;
 }
 
-/* Small Devices*/
+/* HANDHELD DEVICES */
 
 @media (max-width: 768px) {
   nav {
@@ -424,5 +424,36 @@ footer {
 
   .project__description--para {
     font-size: 14px;
+  }
+}
+
+.project__description {
+  left: 30px;
+  padding-right: 30px;
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 480px) {
+  .nav__link:not(:last-child) {
+    display: none;
+  }
+
+  .project__description--para {
+    display: none;
+  }
+
+  .projects__description--links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project__description--title {
+    line-height: 1;
+  }
+
+  .project__description--sub-title {
+    text-align: center;
+    margin: 12px 0;
   }
 }
