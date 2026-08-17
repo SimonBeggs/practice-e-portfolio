@@ -30,13 +30,18 @@ p {
   font-size: 16px;
 }
 
-a {
-  text-decoration: none;
-  position: relative;
+.svg-inline--fa {
   transition: opacity 300ms ease;
 }
 
-i:hover {
+a {
+  text-decoration: none;
+  position: relative;
+
+}
+
+
+.svg-inline--fa:hover {
   opacity: 0.7;
 }
 
